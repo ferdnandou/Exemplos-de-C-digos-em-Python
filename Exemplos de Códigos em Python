@@ -1,93 +1,10 @@
-```markdown
-# Calculadora Básica
+# Exemplos de Códigos em Python
 
-Este script realiza operações matemáticas básicas (adição, subtração, multiplicação, divisão) entre dois números fornecidos pelo usuário.
+Este repositório contém exemplos de scripts em Python para diversas finalidades, como operações matemáticas, conversão de moedas, cálculo de salário líquido, e manipulação de idades.
 
-```python
-# Leitura dos números e operação
-numero1 = float(input("Digite o primeiro número: "))
-numero2 = float(input("Digite o segundo número: "))
-operacao = input("Digite a operação (+, -, *, /): ")
+## Códigos Disponíveis
 
-# Realização da operação
-if operacao == '+':
-    resultado = numero1 + numero2
-elif operacao == '-':
-    resultado = numero1 - numero2
-elif operacao == '*':
-    resultado = numero1 * numero2
-elif operacao == '/':
-    if numero2 != 0:
-        resultado = numero1 / numero2
-    else:
-        resultado = "Erro: Divisão por zero"
-else:
-    resultado = "Operação inválida"
-
-# Exibição do resultado
-print(f"Resultado: {resultado}")
-```
-```
-
-### Código 2: Conversor de Moeda
-
-```markdown
-# Conversor de Moeda
-
-Este script converte um valor em reais (R$) para dólares (USD) utilizando uma taxa de câmbio fixa.
-
-```python
-# Taxa de câmbio
-taxa_cambio = 5.0  # 1 dólar = 5 reais
-
-# Leitura do valor em reais
-valor_reais = float(input("Digite o valor em reais: R$"))
-
-# Conversão para dólares
-valor_dolares = valor_reais / taxa_cambio
-
-# Exibição do valor convertido
-print(f"Valor em dólares: ${valor_dolares:.2f}")
-```
-```
-
-### Código 3: Cálculo de Salário Líquido
-
-```markdown
-# Cálculo de Salário Líquido
-
-Este script calcula o salário líquido de um usuário após a dedução de um imposto de 10%.
-
-```python
-# Leitura do salário bruto
-salario_bruto = float(input("Digite o salário bruto: R$"))
-
-# Cálculo do imposto e salário líquido
-imposto = salario_bruto * 0.10
-salario_liquido = salario_bruto - imposto
-
-# Exibição do salário líquido
-print(f"Salário líquido: R${salario_liquido:.2f}")
-```
-```
-
-### Código 4: Cálculo de Idade Futura
-
-```markdown
-# Cálculo de Idade Futura
-
-Este script adiciona 5 anos à idade atual de um usuário.
-
-```python
-# Leitura da idade
-idade = int(input("Digite a idade: "))
-
-# Adição de 5 anos
-nova_idade = idade + 5
-
-# Exibição da nova idade
-print(f"A nova idade será: {nova_idade}")
-```
-```
-
-Esses exemplos podem ser usados para diferentes finalidades, como aprendizado básico de Python, realização de operações matemáticas, conversão de moedas, e cálculos de salários e idades.
+1. [Calculadora Básica](calculadora_basica.md)
+2. [Conversor de Moeda](conversor_moeda.md)
+3. [Cálculo de Salário Líquido](calculo_salario_liquido.md)
+4. [Cálculo de Idade Futura](calculo_idade_futura.md)
